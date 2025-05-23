@@ -1,0 +1,141 @@
+#!/bin/bash
+# English Language File for Podman Pilot
+
+# --- General ---
+LANG_ERROR="Error"
+LANG_SUCCESS="Success"
+LANG_INFO="Information"
+LANG_WARNING="Warning"
+LANG_OK="OK"
+LANG_CANCEL="Cancel"
+LANG_YES="Yes"
+LANG_NO="No"
+LANG_BACK="Back"
+LANG_EXIT="Exit"
+LANG_PLEASE_WAIT="Please wait..."
+LANG_SELECT_AN_OPTION="Select an option:"
+LANG_INVALID_OPTION="Invalid option."
+LANG_PRESS_ANY_KEY="Press any key to continue..."
+LANG_NOT_IMPLEMENTED_YET="This feature is not implemented yet."
+
+# --- Main Menu (podman-pilot.sh) ---
+LANG_MAIN_MENU_BACKTITLE="Podman Pilot - adghd212"
+LANG_MAIN_MENU_TITLE="Main Menu"
+LANG_MENU_INSTALL_PODMAN="Install/Manage Podman"
+LANG_MENU_MANAGE_REGISTRIES="Manage Image Registries"
+LANG_MENU_MANAGE_PODS="Manage Pods"
+LANG_MENU_MANAGE_IMAGES="Manage Images"
+LANG_MENU_MANAGE_CONTAINERS="Manage Containers"
+LANG_MENU_ONE_CLICK_APPS="One-Click App Deployments"
+LANG_MENU_UPDATE_SCRIPT="Update Podman Pilot"
+LANG_MENU_SWITCH_LANGUAGE="Switch Language" # 新增
+
+# --- Podman Installation (install_podman.sh) ---
+LANG_PODMAN_MENU_TITLE="Podman Management"
+LANG_PODMAN_INSTALL="Install Podman"
+LANG_PODMAN_UNINSTALL="Uninstall Podman"
+LANG_PODMAN_STATUS="Check Podman Status"
+LANG_PODMAN_INSTALL_CONFIRM="Podman is not installed or not found. Install now?"
+LANG_PODMAN_INSTALLING="Installing Podman..."
+LANG_PODMAN_INSTALL_SUCCESS="Podman installed successfully."
+LANG_PODMAN_INSTALL_FAILED="Failed to install Podman."
+LANG_PODMAN_UNINSTALL_CONFIRM="Are you sure you want to uninstall Podman? This may remove all Podman data."
+LANG_PODMAN_UNINSTALLING="Uninstalling Podman..."
+LANG_PODMAN_UNINSTALL_SUCCESS="Podman uninstalled successfully."
+LANG_PODMAN_UNINSTALL_FAILED="Failed to uninstall Podman."
+LANG_PODMAN_ALREADY_INSTALLED="Podman is already installed."
+LANG_PODMAN_NOT_INSTALLED="Podman is not installed."
+LANG_PODMAN_VERSION_INFO="Podman Version Information:"
+
+# --- Registries (manage_registries.sh) ---
+LANG_REGISTRIES_MENU_TITLE="Image Registry Management"
+LANG_REGISTRIES_VIEW_CURRENT="View Current Registries"
+LANG_REGISTRIES_SET_DEFAULT="Set Default Search Registries"
+LANG_REGISTRIES_ADD="Add a Registry"
+LANG_REGISTRIES_REMOVE="Remove a Registry"
+LANG_REGISTRIES_ENTER_NAME="Enter registry name (e.g., docker.io):"
+LANG_REGISTRIES_CONFIG_PATH="User registries config: ~/.config/containers/registries.conf"
+LANG_REGISTRIES_SYSTEM_CONFIG_INFO="Note: System-wide registries are in /etc/containers/registries.conf (requires root)."
+LANG_REGISTRIES_SAVED="Registries configuration saved."
+LANG_REGISTRIES_NOT_FOUND_USER="User registries.conf not found. You might need to configure one first or edit system-wide."
+
+# --- Pods (manage_pods.sh) ---
+LANG_PODS_MENU_TITLE="Pod Management"
+LANG_PODS_LIST="List Pods"
+LANG_PODS_CREATE="Create Pod"
+LANG_PODS_DELETE="Delete Pod"
+LANG_PODS_INSPECT="Inspect Pod"
+LANG_PODS_START="Start Pod"
+LANG_PODS_STOP="Stop Pod"
+LANG_PODS_ENTER_NAME="Enter pod name:"
+LANG_PODS_ENTER_PORTS="Enter port mappings (e.g., 8080:80, or leave blank):"
+LANG_PODS_CREATING="Creating pod..."
+LANG_PODS_CREATE_SUCCESS="Pod created successfully."
+LANG_PODS_CREATE_FAILED="Failed to create pod."
+LANG_PODS_DELETING="Deleting pod..."
+LANG_PODS_DELETE_SUCCESS="Pod deleted successfully."
+LANG_PODS_DELETE_FAILED="Failed to delete pod."
+LANG_PODS_NO_PODS_FOUND="No pods found."
+LANG_PODS_SELECT_TO_DELETE="Select pod to delete:"
+# ... (add more for start, stop, inspect)
+
+# --- Images (manage_images.sh) ---
+LANG_IMAGES_MENU_TITLE="Image Management"
+LANG_IMAGES_LIST="List Images"
+LANG_IMAGES_PULL="Pull Image"
+LANG_IMAGES_REMOVE="Remove Image"
+LANG_IMAGES_SEARCH="Search for Image"
+LANG_IMAGES_PRUNE="Prune Unused Images"
+LANG_IMAGES_ENTER_NAME_TAG="Enter image name and tag (e.g., nginx:latest):"
+LANG_IMAGES_PULLING="Pulling image..."
+LANG_IMAGES_PULL_SUCCESS="Image pulled successfully."
+LANG_IMAGES_PULL_FAILED="Failed to pull image."
+LANG_IMAGES_DELETING="Deleting image..."
+LANG_IMAGES_DELETE_SUCCESS="Image deleted successfully."
+LANG_IMAGES_DELETE_FAILED="Failed to delete image."
+LANG_IMAGES_NO_IMAGES_FOUND="No images found."
+LANG_IMAGES_SELECT_TO_DELETE="Select image to delete:"
+LANG_IMAGES_PRUNING="Pruning unused images..."
+LANG_IMAGES_PRUNE_SUCCESS="Unused images pruned."
+LANG_IMAGES_PRUNE_FAILED="Failed to prune images."
+
+# --- Containers (manage_containers.sh) ---
+LANG_CONTAINERS_MENU_TITLE="Container Management"
+LANG_CONTAINERS_LIST_ALL="List All Containers"
+LANG_CONTAINERS_LIST_RUNNING="List Running Containers"
+LANG_CONTAINERS_CREATE="Create Container (Basic)"
+LANG_CONTAINERS_DELETE="Delete Container"
+LANG_CONTAINERS_START="Start Container"
+LANG_CONTAINERS_STOP="Stop Container"
+LANG_CONTAINERS_RESTART="Restart Container"
+LANG_CONTAINERS_LOGS="View Container Logs"
+LANG_CONTAINERS_INSPECT="Inspect Container"
+LANG_CONTAINERS_EXEC="Execute Command in Container"
+LANG_CONTAINERS_PRUNE="Prune Stopped Containers"
+LANG_CONTAINERS_NO_CONTAINERS_FOUND="No containers found."
+# ... (add more for create, delete, start, stop, etc.)
+
+# --- One-Click Apps (one_click_apps.sh) ---
+LANG_APPS_MENU_TITLE="One-Click App Deployments"
+LANG_APPS_SELECT_TO_DEPLOY="Select an application to deploy:"
+LANG_APPS_CONFIGURING="Configuring %s..." # %s will be app name
+LANG_APPS_DEPLOYING="Deploying %s..."
+LANG_APPS_DEPLOY_SUCCESS="%s deployed successfully."
+LANG_APPS_DEPLOY_FAILED="Failed to deploy %s."
+LANG_APPS_NGINX_NAME="Nginx Web Server"
+LANG_APPS_NGINX_PORT_PROMPT="Enter external port for Nginx (e.g., 8080):"
+LANG_APPS_NGINX_DATA_VOL_PROMPT="Enter host path for Nginx HTML content (e.g., /srv/nginx/html):"
+# ... (add more for other apps like PHP, Apache, Alist, WordPress)
+
+# --- Script Update ---
+LANG_UPDATE_CHECKING="Checking for updates..."
+LANG_UPDATE_CONFIRM="Do you want to check for updates for Podman Pilot?"
+LANG_UPDATE_FETCHING="Fetching latest version from GitHub..."
+LANG_UPDATE_COMPLETE="Podman Pilot updated. Please restart the script."
+LANG_UPDATE_FAILED="Failed to download %s."
+LANG_UPDATE_FILE_EMPTY="Downloaded file %s is empty."
+LANG_UPDATE_ALREADY_LATEST="You are already on the latest version or failed to check."
+
+# --- Language Switch ---
+LANG_SWITCH_LANGUAGE_PROMPT="Select a language:"
+LANG_SWITCH_LANGUAGE_RESTART_NOTE="Language changed. Please restart the script for changes to take full effect."
